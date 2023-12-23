@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Frameworks</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            background: url('./image/Pie.jpg') center/cover;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        h1 {
+            color: #fff;
+            text-align: center;
+            padding: 15px;
+            width: 300px;
+            margin: auto;
+            background: #000;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            box-shadow: 0 10px 10px rgb(202, 14, 14);
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            background:  rgba(241, 10, 10, 0.966);
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        li {
+            margin: 10px;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        a {
+            text-decoration: none;
+            color: #2c3e50;
+            font-weight: bold;
+            transition: color 0.3s ease-in-out;
+            display: inline-block;
+            padding: 10px 20px;
+            border-radius: 5px;
+            background-color: #ecf0f1;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        a:hover {
+            color: rgb(202, 14, 14);
+            background-color: #fff;
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>CSS Frameworks</h1>
+
+        <ul>
+            <li><a href="./bootstrap.html" target="_blank">Bootstrap</a></li>
+            <li><a href="./materializecss.html" target="_blank">Materialize CSS</a></li>
+            <li><a href="./foundation.html" target="_blank">Foundation</a></li>
+            <li><a href="./semanticui.html" target="_blank">Semantic UI</a></li>
+            <li><a href="./tailwindcss.html" target="_blank">Tailwind CSS</a></li>
+            <li><a href="./bulma.html" target="_blank">Bulma</a></li>
+        </ul>
+    </div>
+
+</body>
+
+</html>

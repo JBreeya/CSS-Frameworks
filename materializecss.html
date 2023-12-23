@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page - materialize CSS</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/css/materialize.min.css">
+
+  <style>
+    body {
+      background: url('./image/Pie.jpg') center/cover;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+      color: #fff;
+      font-family: 'Arial', sans-serif;
+    }
+
+    main {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+
+    .card {
+      width: 390px;
+      height: 378px;
+      padding: 35px;
+      background: rgba(241, 10, 10, 0.966);
+      box-shadow: 0 15px 25px rgba(0, 0, 0, 0.7);
+      border-radius: 10px;
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .input-field input {
+      font-size: 16px;
+      color: #fff;
+      border: none;
+      border-bottom: 1px solid #fff; 
+      border-radius: 7px;
+      background: transparent;
+      outline: none;
+      margin-bottom: 20px;
+      font-family: 'Arial', sans-serif; 
+    }
+
+    .remem {
+      display: flex;
+      justify-content: left;
+      align-items: center;
+      color: #fff;
+      margin-top: 15px;
+      font-family: 'Arial', sans-serif; 
+    }
+
+    .remem input[type="checkbox"] {
+      background-color: #fff;
+    }
+
+    .remem input[type="checkbox"] + label {
+      color: #fff;
+      position: relative;
+      padding-left: 30px;
+      cursor: pointer;
+      display: inline-block;
+      line-height: 20px;
+    }
+
+    .input-field input[type=date]:focus+label,
+    .input-field input[type=text]:focus+label,
+    .input-field input[type=email]:focus+label,
+    .input-field input[type=password]:focus+label {
+      color: #fff; 
+    }
+
+    .input-field input[type=date]:focus,
+    .input-field input[type=text]:focus,
+    .input-field input[type=email]:focus,
+    .input-field input[type=password]:focus {
+      border-bottom: 2px solid #fff; 
+      box-shadow: none;
+    }
+
+    .btn {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 90px;
+      height: 40px;
+      font-size: 16px;
+      color: #fff;
+      background: #1389d8;
+      border: 1px solid white;
+      border-radius: 5px;
+      cursor: pointer;
+      font-family: 'Arial', sans-serif; 
+    }
+
+    .btn:hover {
+      background-color: #00090f;
+    }
+
+    .container {
+        width: 310px;
+    }
+
+    h5 {
+        padding: 10px;
+        margin-left: 0%;
+        font-size: 25px;
+    }
+
+    
+   
+  </style>
+</head>
+
+<body>
+  <main>
+    <div class="card">
+        <div class="container">
+      <form method="post">
+        <h5 class="white-text">Sign in</h5>
+        <div class='input-field'>
+          <input class='validate' type='email' name='email' id='email' />
+          <label for='email' class="white-text">  <i class="material-icons" style="font-size: 12px;">person</i> Email address</label>
+        </div>
+
+        <div class='input-field'>
+          <input class='validate' type='password' name='password' id='password' />
+          <label for='password' class="white-text"><i class="material-icons" style="font-size: 12px;">lock</i> Password</label>
+        </div>
+
+        <div class="remem">
+          <input type="checkbox" id="remem" class="filled-in"/>
+          <label for="remem" class="white-text">Remember me</label>
+        </div>
+
+        <br />
+        <center>
+          <div class='row'>
+            <button type='submit' name='btn_login' class='btn border'>Signin</button>
+          </div>
+        </center>
+      </form>
+        </div>
+    </div>
+  </main>
+
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/js/materialize.min.js"></script>
+</body>
+
+</html>
